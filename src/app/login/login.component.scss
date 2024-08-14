@@ -12,14 +12,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(146, 146, 208);
+    background-color: rgb(141, 141, 213);
     padding: 10px 20px;
 }
 
-.navbar .logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
+.logo img {
+    height: 50px; /* Adjust this value based on your logo size */
 }
 
 .nav-links {
@@ -40,35 +38,4 @@ body {
 
 .nav-links a:hover {
     color: #ff6347;
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .burger {
-        display: block;
-    }
 }
