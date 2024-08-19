@@ -12,12 +12,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(141, 141, 213);
-    padding: 20px 30px;
+    background-color: #4CAF50;;
+    padding: 10px 40px;
 }
 
 .logo img {
-    height: 50px; /* Adjust this value based on your logo size */
+    height: 100px; /* Adjust this value based on your logo size */
 }
 
 .nav-links {
@@ -32,10 +32,12 @@ body {
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 30px;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #ff6347;
 }
+
+
