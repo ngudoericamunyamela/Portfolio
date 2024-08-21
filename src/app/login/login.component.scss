@@ -12,12 +12,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(141, 141, 213);
-    padding: 20px 30px;
+    background-color: rgb(117, 185, 204);
+    padding: 10px 40px;
 }
 
 .logo img {
-    height: 50px; /* Adjust this value based on your logo size */
+    height: 100px; /* Adjust this value based on your logo size */
 }
 
 .nav-links {
@@ -32,10 +32,60 @@ body {
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 30px;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #ff6347;
+}
+
+
+ .name{
+   margin-right: 800px;
+}
+
+
+// .navbar {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     z-index: 1000;
+//     background-color: #343a40;
+//     padding: 10px 20px;
+// }
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffc107;
+    background-color: transparent;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    margin-top: 70px;
+    min-height: 100vh;
+}
+
+section:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+section:nth-child(odd) {
+    background-color: #e9ecef;
 }
