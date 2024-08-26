@@ -1,91 +1,114 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
+// Basic styles for the navbar
 .navbar {
-    display: flex;
+    background-color: #58fce4; // Navbar background color
     justify-content: space-between;
-    align-items: center;
-    background-color: rgb(117, 185, 204);
-    padding: 10px 40px;
+    padding: 1rem;
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 0; /* Aligns it to the top of the viewport */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures it appears above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for better visibility */
+    opacity: 0.9; /* Adjusted opacity */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically centers content */
+  
+    .navbar-brand {
+      color: rgb(26, 23, 23);
+      transition: color 0.3s ease;
+      margin-left: 1rem;
+      cursor: pointer;
+  
+      &:hover {
+        color: aliceblue; // Hover color for the brand
+      }
+    }
+  
+    .navbar-toggler {
+      border-color: rgb(15, 14, 14);
+      cursor: pointer;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      gap: 1rem;
+      margin-left: auto; /* Aligns navbar items to the right */
+  
+      .nav-item {
+        display: flex;
+        align-items: center;
+  
+        .nav-link {
+          color: rgb(28, 26, 26);
+          transition: color 0.3s ease, transform 0.3s ease;
+          transform: scale(1);
+          cursor: pointer;
+          padding: 0.5rem 1rem;
+          border-radius: 0.25rem;
+  
+          &:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+            background-color: white;
+            border-radius: 50px;
+          }
+  
+          &.disabled {
+            color: rgba(22, 18, 18, 0.5);
+          }
+        }
+  
+        &.active .nav-link {
+          color: #0d0f11;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+  
+/* Navbar Styles */
+.navbar {
+    background-color: #90f3d8;
 }
 
-.logo img {
-    height: 100px; /* Adjust this value based on your logo size */
+.navbar-toggler {
+    border-color: #fff;
 }
 
-.nav-links {
-    list-style: none;
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23fff" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar-collapse {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 600px;
 }
 
-.nav-links li {
-    margin: 0 15px;
+.nav-pills .nav-link {
+    color: #0a0808;
+    padding: 10px 15px;
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px;
-    transition: color 0.3s ease;
+.nav-pills .nav-link:hover {
+    color: #f0f0f0;
+    background-color: #555;
 }
 
-.nav-links a:hover {
-    color: #ff6347;
+.nav-pills .nav-link.active {
+    color: #000;
+    background-color: #f0f0f0;
 }
 
-
- .name{
-   margin-right: 800px;
-}
-
-
-// .navbar {
-//     position: fixed;
-//     top: 0;
-//     width: 100%;
-//     z-index: 1000;
-//     background-color: #343a40;
-//     padding: 10px 20px;
-// }
-
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.nav {
-    margin-left: auto;
-}
-
-.nav-link {
-    color: #fff;
+.nav-item {
     margin: 0 10px;
 }
 
-.nav-link:hover, .nav-link.active {
-    color: #ffc107;
-    background-color: transparent;
-}
-
-/* Section Styles */
-section {
-    padding: 80px 20px;
-    margin-top: 70px;
-    min-height: 100vh;
-}
-
-section:nth-child(even) {
-    background-color: #f8f9fa;
-}
-
-section:nth-child(odd) {
-    background-color: #e9ecef;
+/* Ensure the navbar works on small screens */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
 }

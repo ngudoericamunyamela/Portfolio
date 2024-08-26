@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   ArrayList=[
-  "Home","About","Projects","Contact"]
+  "Home","About","Projects","Contact","Skills","Experience"]
 
 }
