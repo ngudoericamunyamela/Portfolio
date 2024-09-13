@@ -296,7 +296,7 @@ textarea {
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-size: 1rem;
     background-color: rgb(51, 116, 119);
     color: white;
@@ -305,10 +305,12 @@ textarea {
     transition: background-color 0.3s ease;
     cursor: pointer;
     border: none;
+    
 }
 
 .btn:hover {
     background-color: rgb(51, 116, 119);
+    
 }
 
 /* Responsive Layout */
@@ -392,7 +394,7 @@ textarea {
   
           img {
             width: 100%;
-            height: auto;
+            height: 10pc;
             border-radius: 5px;
             margin-bottom: 15px;
             object-fit: cover;
@@ -405,13 +407,13 @@ textarea {
             font-weight: bold;
             text-align: center;
             color: #fff;
-            background-color: #007bff;
+            background-color: rgb(51, 116, 119);
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s ease;
   
             &:hover {
-              background-color: #0056b3;
+              background-color: rgb(51, 116, 119);
             }
   
             & + .btn {
